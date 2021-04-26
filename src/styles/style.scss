@@ -130,6 +130,23 @@ button {
 			text-decoration: none;
 		}
 	}
+	&__btn {
+		border: none;
+		border-radius: 10rem;
+		padding: 1.5rem 3rem;
+		font-family: 'Mulish', sans-serif;
+		font-weight: 800;
+		cursor: pointer;
+		background: $bg-gradient-save;
+		background: $bg-gradient;
+		color: $white;
+		box-shadow: 5px 4px 50px $bg-gradient-save;
+		transition: .2s ease box-shadow;
+		margin-top: 5.5rem;
+		&:hover {
+			box-shadow: 0px 0px 0px $bg-gradient-save;	
+			}
+	}
 }
 .section-banner {
 	border-bottom: .1rem solid #2f2e2e;
@@ -275,4 +292,63 @@ button {
 		border-radius: 2rem;
 
 	}
+}
+.genres {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	text-align: center;
+	margin-top: 2.1rem;
+	&-item {
+		flex: 0 0 22.7%;
+		border-radius: 2rem;
+		padding: 4.8rem 1rem 3.8rem;
+		box-sizing: border-box;
+		margin-bottom: 2.7rem;
+		&_romance {
+			background: linear-gradient(109.31deg, #FD093F 2.4%, #F383F1 100%);
+		}
+		&_drama {
+			background: linear-gradient(114.5deg, #0FFFDA 2.22%, #3CDB77 68.84%);
+		}
+		&_historical {
+			background: linear-gradient(109.31deg, #B936FF 2.4%, #57DEDA 100%);
+		}
+		&_action {
+			background: linear-gradient(109.31deg, #FD093F 2.4%, #FB1378 2.41%, #FCCB1A 100%);
+		}
+		&_sciFi {
+			background: linear-gradient(109.31deg, #FF6472 2.4%, #FDA75D 100%);
+		}
+		&_horror {
+			background: linear-gradient(110.16deg, #13547A 2.37%, #80D0C7 96.77%);
+		}
+		&_comedy {
+			background: linear-gradient(109.93deg, #FFF77B 2.37%, #FFBF42 50%);
+		}
+		&_documentary {
+			background: linear-gradient(109.31deg, #1FA2FF 2.4%, #1FA2FF 2.41%, #1F535C 97.46%);
+		}
+	}
+	&-icon {
+		height: 8rem;
+		position: relative;
+		overflow: hidden;
+		
+	}
+	&__image {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		object-fit: cover;
+		border-radius: 2rem;
+	}
+	&__title {
+		font-size: 2.8rem;
+		font-weight: 700;
+		margin: .2rem 0 0 0;
+	}
+
 }
