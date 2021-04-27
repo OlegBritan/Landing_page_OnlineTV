@@ -36,8 +36,7 @@ button {
 	padding-right: 1.5rem;
 	padding-top: 1.5rem;
 	padding-bottom: 1.5rem;
-	margin: 0 auto;
-	
+	margin: 0 auto;	
 }
 .nav {
 	display: flex;
@@ -351,4 +350,125 @@ button {
 		margin: .2rem 0 0 0;
 	}
 
+}
+.actors {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	text-align: center;
+	margin-top: 2.1rem;
+	&-items {
+		flex: 0 0 14%;
+	}
+	&-link {
+		overflow: hidden;
+		position: relative;
+		width: 19rem;
+		height: 19rem;
+		display: block;
+		border-radius: 100%;
+	}
+	&__img {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		object-fit: cover;
+		width: 19rem;
+		height: 19rem;
+	}
+}
+.marketing {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	text-align: center;
+	margin-top: 2.1rem;
+
+	&-items {
+		flex: 0 0 50%;
+		height: 392px;
+		width: 739px;
+		border-radius: 2rem;
+	}
+	&__link {		
+		position: relative;
+		width: 100%;
+		height: 34.1rem;
+		display: block;
+	}
+	&__img {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		object-fit: cover;
+	}
+}
+.offer {
+	max-width: 122.4rem;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url(images/offer-bg.png);
+	padding: 7.2rem 14.7rem 7.2rem 5.7rem;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-top: 7rem;
+	margin-bottom: 12.1rem;
+	box-sizing: border-box;
+	border-radius: 2rem;
+	&__title {
+		font-size: 6.4rem;
+		font-weight: 700;
+		max-width: 80rem;
+		margin: 0;
+		line-height: 1;
+	}
+	&__btn {
+		border: none;
+		border-radius: 10rem;
+		padding: 1.5rem 3rem;
+		font-family: 'Mulish', sans-serif;
+		font-weight: 800;
+		cursor: pointer;
+		background: $bg-gradient-save;
+		background: $bg-gradient;
+		color: $white;
+		box-shadow: 5px 4px 50px $bg-gradient-save;
+		transition: .2s ease box-shadow;
+		margin-left: 7rem;
+		&:hover {
+			box-shadow: 0px 0px 0px $bg-gradient-save;	
+			}
+	}
+}
+footer {
+	background-color: #101012;
+	padding: 7rem 0 5rem;
+}
+.footer {
+	display: flex;
+	justify-content: space-between;
+	max-width: 144rem;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+	margin: 0 auto;	
+	&-list {
+		list-style: none;
+		padding-left: 0;
+		margin: 0;
+		&__item {
+			margin-bottom: 2rem;
+		}
+		&__link{
+			font-size: 1.8rem;
+			color: #c2c2c2;
+			text-decoration: none;
+			font-weight: 600;
+		}
+	}
 }
